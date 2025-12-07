@@ -31,6 +31,7 @@
 #include "updater/blockimg.h"
 #include "updater/dynamic_partitions.h"
 #include "updater/install.h"
+#include "updater/samsung.h"
 #include "updater/updater.h"
 #include "updater/updater_runtime.h"
 
@@ -98,6 +99,7 @@ int main(int argc, char** argv) {
   RegisterInstallFunctions();
   RegisterBlockImageFunctions();
   RegisterDynamicPartitionsFunctions();
+  RegisterSamsungFunctions();
   RegisterDeviceExtensions();
 
   auto sehandle = selinux_android_file_context_handle();

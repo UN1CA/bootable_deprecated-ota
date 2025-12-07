@@ -90,6 +90,7 @@ cc_library_static {
         "commands.cpp",
         "install.cpp",
         "mounts.cpp",
+        "samsung.cpp",
         "updater.cpp",
     ],
 
